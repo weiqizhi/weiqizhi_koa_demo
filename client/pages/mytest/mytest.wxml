@@ -1,0 +1,5 @@
+<!--pages/mytest/mytest.wxml-->
+<text>pages/mytest/mytest.wxml</text>
+<view class="list-item" bindtap="mytest">
+            <text>测试 request</text>
+</view>
