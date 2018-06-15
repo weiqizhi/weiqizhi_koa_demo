@@ -8,7 +8,11 @@ Page({
         userInfo: {},
         logged: false,
         takeSession: false,
-        requestResult: ''
+        requestResult: '',
+        index:''
+    },
+    onShow:function(){
+      console.log(this.data.index);
     },
 
     // 用户登录示例
@@ -163,7 +167,8 @@ Page({
     },
 
     // 上传图片接口
-    doUpload: function () {
+    doUpload: function (e) {
+        console.log(e)
         var that = this
 
         // 选择图片

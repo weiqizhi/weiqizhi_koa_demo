@@ -24,6 +24,16 @@ const CONF = {
         pass: 'wx43e45bf291ac5621',
         char: 'utf8mb4'
     },
+    //部署到自己的服务的
+    serverHost: 'localhost',
+    tunnelServerUrl: '',
+    tunnelSignatureKey: '27fb7d1c161b7ca52d73cce0f1d833f9f5b5ec89',
+    // 腾讯云相关配置可以查看云 API 秘钥控制台：https://console.cloud.tencent.com/capi
+    qcloudAppId: '1254332369',
+    qcloudSecretId: 'AKIDlLgmcCImlW3QaXPm490d2ECwSmsi5eiW',
+    qcloudSecretKey: 'g6GAn9F5fz3rQjmZDbkdGdpmUyEF1Zsx',
+    wxMessageToken: 'weixinmsgtoken',
+    networkTimeout: 30000,
 
     cos: {
         /**
@@ -41,5 +51,6 @@ const CONF = {
     wxLoginExpires: 7200,
     wxMessageToken: 'abcdefgh'
 }
+
 
 module.exports = CONF

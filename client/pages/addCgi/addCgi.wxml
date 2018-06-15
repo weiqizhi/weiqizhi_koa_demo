@@ -13,6 +13,12 @@
         </view>
     </view>
 
+    <view class='list'>
+      <view class='list-item' bindtap='testUdp'>
+        <text>发送http To udp request</text>
+      </view>
+    </view>
+
     <!-- 添加CGI指引 -->
     <view class="guide">
         <text class="headline">快速添加CGI指引</text>

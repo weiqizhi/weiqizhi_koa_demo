@@ -1,0 +1,66 @@
+<!--pages/mytest/mytest.wxml-->
+<button type='default' style='width:100%' bindtap='addDevice'>添加设备</button>
+<button type='primary' class='bottom' bindtap='remoteOpenDoor'>远程开门</button>
+<view class='list-show'>
+  <view class='list-titleL'>设备名称</view>
+  <view class='list-title'>设备编号</view>
+  <view class='list-title'>门编号</view>
+</view>
+<view class='container'>
+<!--
+  <view class='list-show' bindtap='searchDev'>
+    <text class='uploader-text'>搜索</text>
+  </view>
+
+  <view class='list-show' wx:if = "{{searchInfo}}" wx:key="unique">
+    <text>{{searchInfo}}</text>
+  </view>
+-->
+  <!--列表渲染 -->
+  <view class='list-show' wx:for='{{devList}}'>
+    {{item}}
+  </view>
+
+</view>
+<!--use wx:for show devices-->
+<radio-group bindchange="radioChange" class='show-colflex'>
+  <label wx:for="{{devices}}" class='list-show'>
+    <radio  value="{{index}}" checked="{{item.checked}}"></radio>
+    <text class='list-col-dev'>{{item.name}}</text>
+    <text class='list-col-dev'>{{item.devsn}}</text>
+    <text class='list-col-door'>{{item.door}}</text>
+    <icon style='margin-left:20px' type="cancel" size="20" bindtap='removeDev' />
+  </label>
+</radio-group>
+
+<!--use modal add device-->
+<view class='modal-mask' bindtap='hideModal' catchtouchmove='preventTouchMove' wx:if="{{showModal}}"></view>
+
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">设备属性</view>
+  <form bindsubmit='addConfirm'>
+    <view class='modal-content'>
+      <view class='show-rowflex'>
+        <text class='modal-text'>设备名称:</text>
+        <input name='devName' class='modal-input'></input>
+      </view>
+      <view class='show-rowflex'>
+        <text class='modal-text'>设备编号:</text>
+        <input name='devSN' class='modal-input'></input>
+      </view>
+      <view class='show-rowflex'>
+        <text class='modal-text'>通讯密码:</text>
+        <input name='password' class='modal-input'></input>
+      </view>
+      <view class='show-rowflex'>
+        <text class='modal-text'>门编号:</text>
+        <input name='doorNum' class='modal-input'></input>
+      </view>
+    </view>
+    <view class="modal-footer">
+      <button class="btn-cancel" bindtap="addCancel">取消</button>
+      <button class="btn-confirm" form-type='submit'>确定</button>
+    </view>
+  </form>
+</view>
+

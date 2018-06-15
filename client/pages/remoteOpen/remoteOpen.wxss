@@ -1,0 +1,147 @@
+/* pages/mytest/mytest.wxss */
+page{
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.list-show{
+    height: 120rpx;
+    width: 100%;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 300ms ease;
+}
+
+.list-show .tunnel {
+    height: auto;
+    padding: 0 0 0 40rpx;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.uploader-text, .tunnel-text {
+    width: 100%;
+    line-height: 52px;
+    font-size: 34rpx;
+    color: #007AFF;
+    margin-left: 10px;
+}
+.list-titleL{
+  width: 180rpx;
+  margin-left: 30px;
+  text-align: left;
+}
+.list-title{
+  width: 180rpx;
+  margin-left: 15px;
+  text-align: left;
+}
+.list-col-dev{
+  width: 180rpx;
+  margin-right: 10px;
+}
+.list-col-door{
+  width: 80rpx;
+  margin-left: 20px; 
+}
+.show-colflex{
+  display: flex;
+  flex-direction: column;
+}
+.show-rowflex{
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.top{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+
+
+/*
+ *自定义模态框样式
+ */
+
+ .modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 80%;
+  overflow: hidden;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  z-index: 2;
+  background: #f9f9f9;
+  margin: -180rpx 80rpx;
+  border-radius: 18rpx;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 50rpx 32rpx;
+  
+}
+
+.modal-text{
+  width: 230rpx;
+  margin-bottom: 12rpx;
+  font-size: 36rpx;
+}
+
+.modal-input {
+  border-bottom: 2px solid bisque;
+  margin-bottom: 12rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: green;
+  text-align: center;
+}

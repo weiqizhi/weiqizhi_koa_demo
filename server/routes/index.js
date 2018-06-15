@@ -39,6 +39,12 @@ router.get('/demo/route1',controllers.demo.route1)
 //响应'path+ /demo/route2 的请求'
 router.get('/demo/route2',controllers.demo.route2)
 
+//响应search请求
+router.get('/demo/search',controllers.demo.search)
+
+//响应udp接口测试
+router.get('/demo/testUdp',controllers.demo.testUdp)
+
 
 //router.get('/mytest',controllers.mytest);
 

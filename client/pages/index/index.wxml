@@ -36,10 +36,13 @@
             <text>快速增加 CGI</text>
         </navigator>
     </view>
+
     <view class='uploader'>
-      <navigator url='../mytest/mytest' open-type='navigate' class='uploader-text'>
-        <text>测试mytest页面</text>
+      <navigator url='../remoteOpen/remoteOpen' open-type='navigate' class='uploader-text'>
+        <text>测试远程开门页面</text>
       </navigator>
     </view>
 
+    <template is="msgItem" data="{{...item}}"/>
+    
 </view>

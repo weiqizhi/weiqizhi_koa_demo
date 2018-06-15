@@ -2,13 +2,16 @@
  *here is my koa-router test
  */
  var router = require('koa-router')();
- router.prefix ('/weapp');
+ var formidable = require('formidable');
+ var path = require('path');
+ router.prefix ('/mytest');
 
- router.get('/mytest',async(ctx,next) =>{
+
+//响应请求IP/mytest/test
+ router.get('/test',async(ctx,next) =>{
     ctx.state.data = {
       msg : 'hello this is my router test'
     }
    next();
- })
-
+})
  module.exports = router;

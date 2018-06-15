@@ -1,0 +1,23 @@
+<!--pages/indextemp/indextemp.wxml-->
+<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="menu-contain" style='background-image: url(../../public/images/timg_1.png);'>
+  <view class="flex-row">
+    <button class="menu-button"  bindtap='myEvent'>远程开门</button>
+    <button class="menu-button" bindtap='myEvent'>NFC开门</button>
+  </view>
+  <view class='flex-row'>
+    <button class="menu-button"  bindtap='myEvent'>二维码开门</button>
+    <button class="menu-button"  bindtap='myEvent'>访客系统</button>
+  </view> 
+</view>
+
+
+
+  
