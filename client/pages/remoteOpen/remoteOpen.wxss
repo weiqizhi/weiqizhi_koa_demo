@@ -114,7 +114,7 @@ page{
 }
 
 .modal-text{
-  width: 230rpx;
+  width: 240rpx;
   margin-bottom: 12rpx;
   font-size: 36rpx;
 }

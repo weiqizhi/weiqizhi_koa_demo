@@ -43,6 +43,11 @@
       </navigator>
     </view>
 
-    <template is="msgItem" data="{{...item}}"/>
+    <view class='uploader'>
+      <navigator url='../../visitorpages/pages/qrview/qrview' open-type='navigate' class='uploader-text'>
+        <text>跳转到分包</text>
+      </navigator>
+    </view>
+
     
 </view>

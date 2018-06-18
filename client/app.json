@@ -4,7 +4,14 @@
     "pages/indextemp/indextemp",
     "pages/addCgi/addCgi",
     "pages/remoteOpen/remoteOpen"
-    
+  ],
+  "subPackages": [
+    {
+      "root": "visitorpages",
+      "pages": [
+        "pages/qrview/qrview"
+      ]
+    }
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
